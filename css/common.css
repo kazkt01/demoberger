@@ -1,0 +1,166 @@
+body {
+  font-family: serif;
+  color: #ffffff;
+  background: #000000;
+}
+
+.l-wrapper {
+  overflow: hidden;
+  padding-top: 80px;
+}
+@media only screen and (max-width: 767px) {
+  .l-wrapper {
+    padding-top: 90px;
+  }
+}
+
+.section {
+  max-width: 940px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.section-tittle {
+  text-align: center;
+  margin: 0;
+  padding: 30px;
+}
+
+.web-detail-btn-box {
+  text-align: center;
+  padding: 30px;
+}
+
+.web-detail-btn {
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .l-sp-menu-btn {
+    display: none;
+  }
+}
+
+.p-sp-menu-btn {
+  position: fixed;
+  width: 20px;
+  height: 16px;
+  right: 22px;
+  top: 13px;
+  z-index: 35;
+}
+
+.p-sp-menu-btn__border {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+}
+.p-sp-menu-btn__border--01 {
+  top: 0;
+}
+.p-sp-menu-btn__border--02 {
+  top: 8px;
+}
+.p-sp-menu-btn__border--03 {
+  top: 16px;
+}
+
+.l-sp-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100vh;
+  width: 100%;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.3s ease transform, 0.3s ease opacity;
+}
+
+@media only screen and (min-width: 768px) {
+  .l-sp-menu {
+    display: none;
+  }
+}
+.l-sp-menu.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.p-sp-menu {
+  height: 100%;
+  background: #848484;
+  overflow-y: auto;
+}
+
+.p-sp-menu__list {
+  text-align: center;
+  list-style: none;
+  padding: 100px 0;
+  height: 100px;
+}
+
+.p-sp-menu__item {
+  padding: 10px;
+}
+
+.p-sp-menu__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .l-sp-menu-btn {
+    display: none;
+  }
+}
+.p-sp-menu-btn {
+  position: fixed;
+  width: 20px;
+  height: 18px;
+  right: 30px;
+  top: 10px;
+  z-index: 12;
+  display: block;
+}
+
+.p-sp-menu-btn__border {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  transition: all 0.5s;
+}
+
+.p-sp-menu-btn__border--01 {
+  top: 0;
+}
+
+.p-sp-menu-btn__border--02 {
+  top: 8px;
+}
+
+.p-sp-menu-btn__border--03 {
+  top: 16px;
+}
+
+.is-active .p-sp-menu-btn__border--02 {
+  opacity: 0;
+}
+
+.is-active .p-sp-menu-btn__border--01 {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.is-active .p-sp-menu-btn__border--03 {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+html.is-fixed {
+  height: 100vh;
+  overflow: hidden;
+}/*# sourceMappingURL=common.css.map */
