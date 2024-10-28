@@ -168,7 +168,6 @@ p {
   text-align: center;
   display: block;
   justify-content: center;
-
   margin: 0;
   margin-bottom: 100px;
 }
@@ -177,6 +176,15 @@ p {
   width: 200px;
   height: auto;
   object-fit: cover;
+  // タブレット
+  @media screen and (min-width: 768px) {
+    width: 300px;
+  }
+
+  // デスクトップ
+  @media screen and (min-width: 2560px) {
+    width: 600px;
+  }
 }
 
 .fig-cap {
