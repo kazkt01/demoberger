@@ -44,9 +44,6 @@
   display: flex;
 }
 
-// .header-list {
-// }
-
 .header-a-link {
   color: #fff;
   text-decoration: none;
@@ -57,23 +54,16 @@
 //        Hero
 //////////////////////////////////
 
-.h-fig-box {
+.hero-box {
   width: 100%;
-  margin: 0;
-  padding: 0;
+  height: auto;
+  margin-top: 80px;
 }
 
 .hero-video {
   width: 100%;
   height: auto;
 }
-
-// .hero-strong {
-//   position: absolute;
-// }
-//        Main
-//////////////////////////////////
-///////////////////////////////////////////
 
 //        About
 //////////////////////////////////
@@ -96,59 +86,45 @@
   }
 }
 
-// skills
-
-.skills-tittle {
-  margin-bottom: 0;
-  font-size: 20px;
-  @media only screen and (max-width: 767px) {
-    font-size: 16px;
-    text-decoration: underline;
-  }
-}
-
-.skills-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  @media only screen and (max-width: 767px) {
-    display: block;
-  }
-}
-
-.skills {
-  font-size: 14px;
-  margin: 1em;
-  border: 1px solid #fff;
-  padding: 6px;
-  border-radius: 8px;
-  background: #000000;
-  @media only screen and (max-width: 767px) {
-    font-size: 12px;
-    border: 1px none #fff;
-  }
-}
-
-//    WEB
+//         WEB
 /////////////////////////////////////
+
+// 大枠
 .web-box {
-  display: flex;
-  border: 1px solid #ffffff;
   width: 100%;
   text-align: center;
-  margin: 0 auto;
-  border-radius: 10px;
-  overflow: hidden;
-  background: #ffff;
 }
 
-.web-iframe {
-  width: 100%;
-  height: 600px;
+.web-img-box {
+  width: 600px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+
+  // スマホ
+  @media screen and (max-width: 425px) {
+    width: 100px;
+  }
+  // タブレット
+  @media screen and (max-width: 768px) {
+    width: 200px;
+  }
+  // ノーパソ
+  @media screen and (max-width: 1024px) {
+    width: 600px;
+  }
 }
 
-.web-txt {
-  color: #fff;
+.web-btn {
+  margin: 20px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: #fff;
+  border: none;
+
+  &:hover {
+    border: 1px solid #ff0000;
+    color: #ff0000;
+  }
 }
 
 //          3DCG
@@ -157,10 +133,19 @@
 .cg-box {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  @media only screen and (max-width: 767px) {
+  // タブレット
+  @media screen and (max-width: 768px) {
     display: block;
-    text-align: center;
+  }
+  // タブレット
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+  // ノーパソ
+  @media screen and (max-width: 1024px) {
+    display: block;
   }
 }
 
@@ -169,9 +154,9 @@
   height: 300px;
   object-fit: cover;
 
-  @media only screen and (max-width: 767px) {
-    width: 200px;
-    height: 200px;
+  // タブレット
+  @media screen and (max-width: 768px) {
+    display: block;
   }
 }
 
@@ -179,79 +164,48 @@
   margin-bottom: 0;
 }
 
-//          Video
+//          Design
 /////////////////////////////////////
 
-.video-box {
+.d-box {
+  width: 100%;
+  height: auto;
+}
+.fig-box {
   text-align: center;
   display: flex;
-  @media only screen and (max-width: 767px) {
+  justify-content: center;
+  // タブレット
+  @media screen and (max-width: 768px) {
     display: block;
+  }
+}
+
+.img-box-01 {
+  width: 450px;
+  height: auto;
+  object-fit: cover;
+
+  // タブレット
+  @media screen and (max-width: 768px) {
+    width: 300px;
+  }
+}
+
+.fig-cap {
+  margin: 0 20px;
+  text-align: left;
+  @media screen and (max-width: 768px) {
     text-align: center;
   }
 }
 
-.video-video {
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-  padding: 10px;
-}
-
-//          Design
-/////////////////////////////////////
-
-.design-box {
-  text-align: center;
-  display: flex;
-
-  @media only screen and (max-width: 767px) {
-    display: block;
+.fig-url {
+  color: #fff;
+  text-decoration: none;
+  &:hover {
+    color: blue;
   }
-}
-
-.design-fig {
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-// 原画の半分
-.design-img {
-  width: 298px;
-  height: 421px;
-  object-fit: cover;
-
-  // width: auto;
-  // height: auto;
-
-  //   width: 149px;
-  //   height: 210.5px;
-}
-
-.design-fig-cap {
-  padding: 0 10px;
-}
-
-.design-img-square {
-  width: 298px;
-  height: 298px;
-}
-
-.design-img-fit {
-  display: block;
-  margin: 0 auto;
-  width: 500px;
-  height: auto;
-  object-fit: cover;
-
-  @media only screen and (max-width: 767px) {
-    width: 300px;
-    height: auto;
-  }
-}
-
-.add-title {
-  text-align: center;
 }
 
 //        Form
@@ -288,10 +242,10 @@
   min-height: 100px;
 }
 
-@media screen and (max-width: 760px) {
-  .select,
-  .input,
-  .textarea {
+.select,
+.input,
+.textarea {
+  @media screen and (max-width: 768px) {
     min-width: auto;
     width: 100%;
   }

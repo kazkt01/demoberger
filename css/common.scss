@@ -6,19 +6,15 @@
 body {
   font-family: serif;
   color: #ffffff;
-  background: #000000;
+  background: #121212;
 }
 
 //   LP-wrapper
 ////////////////////////////
-.l-wrapper {
-  overflow: hidden;
-  padding-top: 80px;
-
-  @media only screen and (max-width: 767px) {
-    padding-top: 90px;
-  }
-}
+// .l-wrapper {
+//   overflow: hidden;
+//   padding-top: 80px;
+// }
 
 //    Section
 //////////////////////////////////////
@@ -143,10 +139,14 @@ body {
 //    l-sp-menu-practice
 ////////////////////////////////////////////
 
-@media only screen and (min-width: 768px) {
-  .l-sp-menu-btn {
+.l-sp-menu-btn {
+  @media only screen and (min-width: 768px) {
     display: none;
   }
+
+  // @media screen and (max-width: 768px) {
+  //   display: none;
+  // }
 }
 
 .p-sp-menu-btn {

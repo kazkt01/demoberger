@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="lp-wrapper">  
-    <!--                     header
+    <!--         header
     /////////////////////////////////////////////// -->
     <header class="header">
         <div class="header-box">
@@ -47,16 +47,18 @@
         </div>
     </header>
 
+
+
+
+
     <!--             hero 
      ///////////////////////////////////-->
     <hero class="hero">
-      <figure class="h-fig-box">
-        <video class="hero-video" autoplay preload loop muted 
-      playsInline
-    width="100%" height="auto">
-  <source src="./assets/video/cyber-resize.mp4" />
-</video>
-</figure>
+        <div class="hero-box">
+          <video class="hero-video"  autoplay loop muted playsInline>
+              <source src="./assets/video/cyber-resize.mp4" type="video/mp4" />
+          </video>
+        </div>
     </hero>
 
     <!--                About 
@@ -67,27 +69,16 @@
         <img class="about-icon" src="./assets/images/icon_idea01.jpg" alt="my_icon" />
         <figcaption class="figure-cap-txt">
           <h2>Demo Site</h2>
-          <h3>機能</h3>
-          <p>jQueryを使用しハンバーガーメニューを実装しました</p>
-          <p>コンタクトフォームから実際にメッセージも送信できます</p>
-        </figcaption>
-        <p class="skills-tittle">&nbsp;Skills&nbsp;</p>
-        <figcaption class="skills-box">
-          <p class="skills">HTML・CSS</p>
-          <p class="skills">JavaScript</p>
-          <p class="skills">TypeScript</p>
-          <p class="skills">React</p>
-          </figcaption>
-          <figcaption class="skills-box">
-            <p class="skills">Figma</p>
-            <p class="skills">PhotoShop</p>
-            <p class="skills">Illustrator</p>
-          <p class="skills">Blender</p>
-          <p class="skills">UE5</p>
-          <p class="skills">Logic Pro X</p>
-         </figcaption>
+          <h3>このサイトは、アウトプット用サイトです</h3>
+          <p>jQueryを使用しハンバーガーメニューを実装することを目的としています</p>
+
       </figure>
     </section>
+
+
+
+    <!-- ここまでok -->
+
 
 
 
@@ -97,110 +88,71 @@
 
     <section class="section" id="web">
       <h1 class="section-tittle">Web</h1>
-      <div class="grid-col-3">
-        <figure class="web-box">
-            <iframe
-              class="web-iframe"
-              src="https://quiet-sunshine-c8510f.netlify.app"
-              frameborder="0"
-            >
-          </iframe>
+      <div class="web-box">
+
+      <figure class="web-fig-box"> 
+        <img 
+        class="web-img-box"
+        src="./assets/images/red-3d,png.png" alt="">
+        <figcaption>
+          <h2>3D SITE</h2>
+          <p>Three.jsを使用し作成しました <br>
+           クリックもしくは、タッチすることでカメラ操作ができます
+          </p>
+
+        </figcaption>
+
+
+
+
+         <div class="web-btn-box">
+                <a  target="_blank"   href="https://quiet-sunshine-c8510f.netlify.app">
+            <button class="web-btn" >Detail >></button>
+          </a>
+        </div>
         </figure>
-      <div class="web-detail-btn-box">
-        <a  target="_blank"   href="https://quiet-sunshine-c8510f.netlify.app">
-          <button class="web-detail-btn">Detail >></button>
-        </a>
-      </div>
-    </div>
+    </div> 
+
     </section>
 
-            <!-- <hr class="hr-border"> -->
 
-      <!--  Application
-    //////////////////////////////////////////// -->
+
     <section class="section" id="app">
-      <h1 class="section-tittle">App</h1>
-      <div class="grid-col-3">
-        <figure class="web-box">
-            <iframe
-              class="web-iframe"
-              src="https://cotumo-app-beta-var2.vercel.app/"
-              frameborder="0"
-            >
-            <figcaption class="web-description">
-                <!-- <p class="web-txt">
-                </p> -->
-            </figcaption>
-        </figure>
-        </iframe>
-      </div>
-      <div class="web-detail-btn-box">
-        <a  target="_blank"   href="https://cotumo-app-beta-var2.vercel.app/">
-            <button class="web-detail-btn">Detail >></button>
-        </a>
-      </div>
-    </section>
+      <h1 class="section-tittle">APP</h1>
 
-            <!-- <hr class="hr-border"> -->
+      <div class="web-box">
+        <!-- web -->
+      <figure class="web-fig-box"> 
+        <img 
+        class="web-img-box"
+        src="./assets/images/cotumo-sample.png" alt="">
+         <figcaption>
+          <h2>習慣管理アプリ</h2>
+          <p>主にReactとTypeScriptでコーディングしました <br>
+           習慣を見える化し管理することで日々の行動の改善を促す為の<br>
+           アプリです
+
+          </p>
+
+        </figcaption>
+         <div class="web-btn-box">
+                <a  target="_blank"   href="https://quiet-sunshine-c8510f.netlify.app">
+            <button class="web-btn" >Detail >></button>
+          </a>
+        </div>
+        </figure>
+    </div> 
+    </section>
 
 
     <!--   3DCG
     /////////////////////// -->
     <section class="section" id="3dcg">
       <h1 class="section-tittle  section-tittle--cg ">3DCG</h1>
-      <div class="cg-box">
-        <figure class="cg-fig">
-          <img class="cg-img" src="./assets/images/DE04DAE1-BF05-4348-880B-E614A4AB4A71.jpg" alt="" />
-          <figcaption class="cg-fig-cap">
-            <h2 class="cg-tittle-h2">Enviorment</h2>
-            <!-- <p></p> -->
-          </figcaption>
-        </figure>
-        <figure class="cg-fig">
-          <img class="cg-img " src="./assets/images/amp.png"  alt="" />
-          <figcaption class="cg-fig-cap">
-            <h2 class="cg-tittle-h2" >Modeling</h2>
-            <!-- <p></p> -->
-          </figcaption>
-        </figure>
-        <figure class="cg-fig">
-          <img class="cg-img" src="./assets/images/IMG_8510.PNG" alt="" />
-          <figcaption class="cg-fig-cap">
-            <h2 class="cg-tittle-h2" >Sci-fi</h2>
-            <!-- <p></p> -->    
-          </figcaption>
-        </figure>
-      </div>
+
     </section>
 
-        <!-- <hr class="hr-border"> -->
 
-
-    <!--     Video
-    /////////////////////////////////// -->
-    <!-- <section class="section" id="video">
-      <h1 class="section-tittle">Video</h1>
-      <div class="video-box">
-        <video    muted controls class="video-video">
-          <source
-            src="./assets/video/TERU DRUM $.mp4"
-          />
-        </video>
-        <video   muted controls class="video-video">
-          <source
-            src="./assets/video/hitech_shape_01.mp4"
-          />
-        </video>
-        <video   muted controls class="video-video">
-          <source
-            src="./assets/video/0001-0100.mp4"
-          />
-        </video>
-      </div>
-    </section> -->
-
-
-       <!-- <hr class="hr-border"> -->
 
 
         <!--     Design
@@ -208,50 +160,75 @@
     <section class="section" id="design">
       <h1 class="section-tittle">Design
       </h1>
-        <div class="design-box">
-            <figure class="design-fig">
-                <img class="design-img" src="./assets/images/graphic-practice01.png" alt=" />
-            <figcaption class="design-fig-cap">
-                <h1>Practice</h1>
-                <!-- <p>Udemyの講座をもとに作成しました
-                </p> -->
+      <div class="d-box">
+          <figure class="fig-box">
+            <img 
+            class="img-box-01"
+            src="./assets/images/graphic-practice01.png" alt="">
+            <figcaption class="fig-cap">
+              <h2 class="fig-title" >Udemy Practice 01</h2>
+              <p>Illastratorの基礎を学習しました。<br>
+                
+
+              </p>
+              <p>参照：</p>
+              <p>
+                【上級者用】続！チラシデザインマスター講座｜Adobe Illustrator（イラストレーター）＆Photoshop　<br>
+              </p>
+              <a 
+              class="fig-url"
+              target="_blank"
+              href=" https://www.udemy.com/share/108m0q3@ITaR6eEdqNUy0vEXILrTjupikrUChMxcf0OAsS6cuRo9YDtJq996DQWUoGxUzywAMA==/">
+      
+              https://www.udemy.com/share/108m0q3@ITaR6eEdqNUy0vEXILrTjupikrUChMxcf0OAsS6cuRo9YDtJq996DQWUoGxUzywAMA==/</a>
             </figcaption>
-        </figure>
-            </div>
-               <div class="design-box">
-            <figure class="design-fig">
-                <img class="design-img-square" src="./assets/images/psD.jpg" alt="" />
-            <figcaption class="design-fig-cap">
-                <h1>Thumbnail</h1>
-                <!-- <p>
-                 店舗紹介のサムネを自作してみました
-                </p> -->
+            </figure>
+
+          <figure class="fig-box">
+            <img 
+            class="img-box-01"
+            src="./assets/images/thumA.jpg" alt="">
+            <figcaption   class="fig-cap">
+              <h2 class="fig-title" >Udemy Practice 02</h2>
+              <p>Photoshopの基礎を学習しました。</p>
+                 <p>参照：  </p>
+                 <p>
+                   【完全版】知識ゼロから最速で即戦力レベルになるPhotoshopマスターコース
+                 </p>
+
+
+               
+              <a 
+              class="fig-url"
+              target="_blank"
+              href="https://www.udemy.com/share/106n4Y3@sK4KEMlqTtKjOcmatBT3lEmb7pGefiruk3_eMwm3iexM5GENNOFpdCls3ou94VtsIQ==/">
+              https://www.udemy.com/share/106n4Y3@sK4KEMlqTtKjOcmatBT3lEmb7pGefiruk3_eMwm3iexM5GENNOFpdCls3ou94VtsIQ==/
+              </a>
             </figcaption>
-        </figure>
-            <figure class="design-fig">
-                <img class="design-img-square" src="./assets/images/psC.jpg" alt="" />
-            <figcaption class="design-fig-cap">
-                <h1>Album Art
-                </h1>
-                <!-- <p>
-                  PhotoShopのみで作成しました
-                </p> -->
+            </figure>
+
+          <figure class="fig-box">
+            <img 
+            class="img-box-01"
+            src="./assets/images/psB.jpg" alt="">
+            <figcaption   class="fig-cap">
+              <h2 class="fig-title" >Udemy Practice 03</h2>
+              <p>レタッチの基礎やマスクの使い方について学びました。</p>
+                 <p>参照：</p>
+              <a 
+              class="fig-url"
+              target="_blank"
+              href="https://www.udemy.com/share/106n4Y3@sK4KEMlqTtKjOcmatBT3lEmb7pGefiruk3_eMwm3iexM5GENNOFpdCls3ou94VtsIQ==/">
+              https://www.udemy.com/share/106n4Y3@sK4KEMlqTtKjOcmatBT3lEmb7pGefiruk3_eMwm3iexM5GENNOFpdCls3ou94VtsIQ==/
+              </a>
             </figcaption>
-        </figure>
-        </div>
-      <figure class="design-fig">
-          <img class="design-img-fit" src="./assets/images/thumA.jpg" alt="" />
-      <figcaption class="design-fig-cap">
-          <h1 class="add-title" >Practice02
-          </h1>
-          <!-- <p>
-            PhotoShopのみで作成しました
-          </p> -->
-      </figcaption>
-        </figure>
+            </figure>
+
+
+
+      </div>
         </section>
 
-       <!-- <hr class="hr-border"> -->
 
          <!--     Contact
     /////////////////////////////////// -->
@@ -334,7 +311,7 @@
             <a href="#web" class="p-sp-menu__link">Web</a>
           </li>
           <li class="p-sp-menu__item">
-            <a href="#app" class="p-sp-menu__link">App</a>
+            <a href="#develop" class="p-sp-menu__link">App</a>
           </li>
           <li class="p-sp-menu__item">
             <a href="#3dcg" class="p-sp-menu__link">3DCG</a>
@@ -350,13 +327,6 @@
     </div><!-- l-sp-menu -->
 
 
-
-    
-
-
-
-
-
     </div><!-- l-sp-menu -->
     <div class="l-sp-menu-btn" id="sp_menu_btn">
       <div class="p-sp-menu-btn">
@@ -368,17 +338,9 @@
 
 
 
-
-
-
-
-
-
     </div>  <!--lp-wrapper END  -->
 
-
     <script src="js/jquery.js"></script>
-
      <script>
       // toggleを使わなかった場合
     $(document).ready(function () {

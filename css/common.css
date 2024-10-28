@@ -1,17 +1,7 @@
 body {
   font-family: serif;
   color: #ffffff;
-  background: #000000;
-}
-
-.l-wrapper {
-  overflow: hidden;
-  padding-top: 80px;
-}
-@media only screen and (max-width: 767px) {
-  .l-wrapper {
-    padding-top: 90px;
-  }
+  background: #121212;
 }
 
 .section {
@@ -117,6 +107,7 @@ body {
     display: none;
   }
 }
+
 .p-sp-menu-btn {
   position: fixed;
   width: 20px;
