@@ -106,11 +106,18 @@
   border-radius: 20px;
   object-fit: cover;
 
+  // スマホ
   @media screen and (min-width: 375px) {
     width: 300px;
   }
+  // タブレット
   @media screen and (min-width: 768px) {
     width: 600px;
+  }
+
+  // デスクトップ
+  @media screen and (min-width: 2560px) {
+    width: 2000px;
   }
 }
 
@@ -121,14 +128,34 @@
   background: #fff;
   border: none;
 
+  // デスクトップ
+  @media screen and (min-width: 2560px) {
+    padding: 20px 60px;
+    font-size: 20px;
+  }
   &:hover {
     border: 1px solid #ff0000;
     color: #ff0000;
   }
 }
 
-//          3DCG
-/////////////////////////////////////
+h2 {
+  @media screen and (min-width: 2560px) {
+    font-size: 40px;
+  }
+}
+
+h3 {
+  @media screen and (min-width: 2560px) {
+    font-size: 40px;
+  }
+}
+
+p {
+  @media screen and (min-width: 2560px) {
+    font-size: 40px;
+  }
+}
 
 //          Design
 /////////////////////////////////////

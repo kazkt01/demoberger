@@ -104,6 +104,11 @@
     width: 600px;
   }
 }
+@media screen and (min-width: 2560px) {
+  .web-img-box {
+    width: 2000px;
+  }
+}
 
 .web-btn {
   margin: 20px;
@@ -112,9 +117,33 @@
   background: #fff;
   border: none;
 }
+@media screen and (min-width: 2560px) {
+  .web-btn {
+    padding: 20px 60px;
+    font-size: 20px;
+  }
+}
 .web-btn:hover {
   border: 1px solid #ff0000;
   color: #ff0000;
+}
+
+@media screen and (min-width: 2560px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  h3 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  p {
+    font-size: 40px;
+  }
 }
 
 .d-box {
