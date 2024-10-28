@@ -138,12 +138,11 @@
 }
 .fig-box {
   text-align: center;
-  display: flex;
+  display: block;
   justify-content: center;
-  // タブレット
-  @media screen and (max-width: 768px) {
-    display: block;
-  }
+
+  margin: 0;
+  margin-bottom: 100px;
 }
 
 .img-box-01 {
@@ -153,65 +152,22 @@
 }
 
 .fig-cap {
-  margin: 0 20px;
-  text-align: left;
-  @media screen and (max-width: 768px) {
-    text-align: center;
-  }
+  margin: 0 60px;
+  text-align: center;
 }
 
 .fig-url {
   color: #fff;
   text-decoration: none;
   &:hover {
-    color: blue;
+    color: red;
   }
 }
 
 //        Form
 ///////////////////////////////
 
-.form-table {
-  display: flex;
-  justify-content: center;
-}
-
-.select {
-  border-radius: 5px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  min-width: 500px;
-}
-
-.input {
-  border-radius: 5px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  min-width: 500px;
-}
-
-.radio {
-  margin: 0 10px;
-}
-
-.textarea {
-  border-radius: 5px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  min-width: 500px;
-  min-height: 100px;
-}
-
-.select,
-.input,
-.textarea {
-  @media screen and (max-width: 768px) {
-    min-width: auto;
-    width: 100%;
-  }
-}
-
-.form-button {
+.form-box {
   text-align: center;
 }
 
@@ -223,28 +179,41 @@
   text-align: center;
 }
 
-//   btn
-////////////////////////////
+.input-box {
+  width: 200px;
+  height: 40px;
+  margin: 5px 0;
+  border-radius: 20px;
+  padding: 10px;
 
-.web-detail-btn {
-  background: #ffffff;
-  border-radius: 10px;
-  border: none;
-  &:hover {
-    border: 1px solid #333;
-    background: #464646;
+  @media screen and (min-width: 375px) {
+    width: 300px;
+    height: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 600px;
+    height: 40px;
+  }
+}
+.txt-area-box {
+  margin-top: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  @media screen and (min-width: 375px) {
+    width: 300px;
+    height: 400px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 600px;
+    height: 400px;
   }
 }
 
 .form-btn {
-  background: #ffffff;
-  color: #333;
-  border-radius: 10px;
-  border: none;
-  font-size: 15px;
-
-  &:hover {
-    border: 1px solid #333;
-    background: #464646;
-  }
+  margin-top: 20px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: #fff;
 }

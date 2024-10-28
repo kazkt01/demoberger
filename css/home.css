@@ -123,13 +123,10 @@
 
 .fig-box {
   text-align: center;
-  display: flex;
+  display: block;
   justify-content: center;
-}
-@media screen and (max-width: 768px) {
-  .fig-box {
-    display: block;
-  }
+  margin: 0;
+  margin-bottom: 100px;
 }
 
 .img-box-01 {
@@ -140,13 +137,8 @@
 }
 
 .fig-cap {
-  margin: 0 20px;
-  text-align: left;
-}
-@media screen and (max-width: 768px) {
-  .fig-cap {
-    text-align: center;
-  }
+  margin: 0 60px;
+  text-align: center;
 }
 
 .fig-url {
@@ -154,50 +146,10 @@
   text-decoration: none;
 }
 .fig-url:hover {
-  color: blue;
+  color: red;
 }
 
-.form-table {
-  display: flex;
-  justify-content: center;
-}
-
-.select {
-  border-radius: 5px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  min-width: 500px;
-}
-
-.input {
-  border-radius: 5px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  min-width: 500px;
-}
-
-.radio {
-  margin: 0 10px;
-}
-
-.textarea {
-  border-radius: 5px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  min-width: 500px;
-  min-height: 100px;
-}
-
-@media screen and (max-width: 768px) {
-  .select,
-  .input,
-  .textarea {
-    min-width: auto;
-    width: 100%;
-  }
-}
-
-.form-button {
+.form-box {
   text-align: center;
 }
 
@@ -207,24 +159,49 @@
   text-align: center;
 }
 
-.web-detail-btn {
-  background: #ffffff;
-  border-radius: 10px;
-  border: none;
+.input-box {
+  width: 200px;
+  height: 40px;
+  margin: 5px 0;
+  border-radius: 20px;
+  padding: 10px;
 }
-.web-detail-btn:hover {
-  border: 1px solid #333;
-  background: #464646;
+@media screen and (min-width: 375px) {
+  .input-box {
+    width: 300px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .input-box {
+    width: 600px;
+    height: 40px;
+  }
+}
+
+.txt-area-box {
+  margin-top: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+}
+@media screen and (min-width: 375px) {
+  .txt-area-box {
+    width: 300px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .txt-area-box {
+    width: 600px;
+    height: 400px;
+  }
 }
 
 .form-btn {
-  background: #ffffff;
-  color: #333;
-  border-radius: 10px;
-  border: none;
-  font-size: 15px;
-}
-.form-btn:hover {
-  border: 1px solid #333;
-  background: #464646;
+  margin-top: 20px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: #fff;
 }/*# sourceMappingURL=home.css.map */
