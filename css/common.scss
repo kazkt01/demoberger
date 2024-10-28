@@ -112,6 +112,9 @@ body {
   color: #ffffff;
   text-decoration: none;
   font-size: 20px;
+  &:hover {
+    color: red;
+  }
 }
 
 //    l-sp-menu-practice
