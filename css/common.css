@@ -5,24 +5,13 @@ body {
 }
 
 .section {
-  max-width: 940px;
   margin: 0 auto;
   margin-bottom: 80px;
 }
 
 .section-tittle {
   text-align: center;
-  margin: 0;
   padding: 30px;
-}
-
-.web-detail-btn-box {
-  text-align: center;
-  padding: 30px;
-}
-
-.web-detail-btn {
-  font-size: 20px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -112,8 +101,8 @@ body {
   position: fixed;
   width: 20px;
   height: 18px;
-  right: 30px;
-  top: 20px;
+  right: 2em;
+  top: 2em;
   z-index: 12;
   display: block;
 }

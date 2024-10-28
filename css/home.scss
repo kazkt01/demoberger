@@ -22,17 +22,16 @@
   margin: 10px 20px;
 }
 
+.header-logo-box {
+  padding: 17px 0;
+}
+
 .header__logo {
   font-weight: bold;
   font-size: 18px;
   color: #fff;
   text-decoration: none;
   height: 100%;
-  padding-left: 14px;
-  @media only screen and (max-width: 767px) {
-    padding: 10px;
-    font-size: 14px;
-  }
 }
 
 .header-nav {
@@ -49,6 +48,10 @@
   text-decoration: none;
   margin: 0 1em;
   font-size: 14px;
+
+  &:hover {
+    color: #ff0000;
+  }
 }
 
 //        Hero
@@ -96,20 +99,16 @@
 }
 
 .web-img-box {
-  width: 600px;
+  width: 250px;
+  height: auto;
   border: 1px solid #fff;
   border-radius: 20px;
+  object-fit: cover;
 
-  // スマホ
-  @media screen and (max-width: 425px) {
-    width: 100px;
+  @media screen and (min-width: 375px) {
+    width: 300px;
   }
-  // タブレット
-  @media screen and (max-width: 768px) {
-    width: 200px;
-  }
-  // ノーパソ
-  @media screen and (max-width: 1024px) {
+  @media screen and (min-width: 768px) {
     width: 600px;
   }
 }
@@ -130,40 +129,6 @@
 //          3DCG
 /////////////////////////////////////
 
-.cg-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  // タブレット
-  @media screen and (max-width: 768px) {
-    display: block;
-  }
-  // タブレット
-  @media screen and (max-width: 768px) {
-    display: block;
-  }
-  // ノーパソ
-  @media screen and (max-width: 1024px) {
-    display: block;
-  }
-}
-
-.cg-img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-
-  // タブレット
-  @media screen and (max-width: 768px) {
-    display: block;
-  }
-}
-
-.cg-tittle-h2 {
-  margin-bottom: 0;
-}
-
 //          Design
 /////////////////////////////////////
 
@@ -182,14 +147,9 @@
 }
 
 .img-box-01 {
-  width: 450px;
+  width: 200px;
   height: auto;
   object-fit: cover;
-
-  // タブレット
-  @media screen and (max-width: 768px) {
-    width: 300px;
-  }
 }
 
 .fig-cap {
